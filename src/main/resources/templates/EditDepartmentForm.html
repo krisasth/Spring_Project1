@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>depaartment Edit</title>
+<!-- Latest compiled and minified CSS -->
+
+</head>
+<body>
+<th:block th:insert="Header.html"></th:block>
+
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-header bg-primary text-white text-center">
+				<h4>Department Edit</h4>
+			</div>
+
+			<div class="card-body">
+				<form action="/dept/update" method="post" th:object="${dmodel}">
+					<div class="row p-2">
+						<div class="col-4">Department Name</div>
+						<div class="col-6">
+							<input type="text" th:field="*{name}" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4">Department Head</div>
+						<div class="col-6">
+							<input type="text" th:field="*{depthead}" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4">Department Phone</div>
+						<div class="col-6">
+							<input type="text" th:field="*{deptphone}" class="form-control">
+						</div>
+					</div>
+
+					<div class="row p-2">
+						<div class="col-4"></div>
+						<div class="col-6">
+							<input type="submit" value="Update Department" class="btn btn-success">
+						</div>
+					</div>
+
+					<input type="hidden" th:field=*{deptid}>
+				</form>
+			</div>
+
+			<div class="card-footer bg-warning text-center">copyright@2025</div>
+		</div>
+	</div>
+</body>
+</html>

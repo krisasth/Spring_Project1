@@ -1,0 +1,15 @@
+package com.brdway.springbootmvc.service;
+
+import java.util.List;
+
+import com.brdway.springbootmvc.model.Department;
+
+public interface DepartmentService {
+
+	void addDept(Department dept);
+	void deleteDept(int id);
+	void updateDept(Department dept);
+	Department getDeptById(int id);
+	List<Department> getAllDepts();
+	
+}
