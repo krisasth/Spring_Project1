@@ -24,6 +24,7 @@ import jakarta.servlet.http.HttpSession;
 public class UserController {
 
 	private final Logger log = LoggerFactory.getLogger(UserController.class);//to make logfiles
+
 	
 	@Autowired
 	private ProductRepository prodRepo;
